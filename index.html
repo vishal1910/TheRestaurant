@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+     #logo-img{
+          background: url("logo.png") no-repeat;
+          /*height: 150px;
+          width: 150px;
+          margin: 10px 15px 10px 0px;*/
+      }
+     @media (min-width: 992px) and (max-width: 1199px) {
+      /* Header*/ 
+      #logo-img {
+        background: url('restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+       }
+     }
+    </style>
+  </head>
+<body>
+  <header>
+     <nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <div class="navbar-header">
+           <a href="index.html" class="d-none d-lg-block  "style="float: left;">
+              <div id="logo-img" alt="logo image"></div>
+          </a>
+          
+           <div class="navbar-brand">
+            <a href="index.html"><h1>The Restaurant</h1></a>
+            <p>
+              <img src="star-k-logo.png" alt="The Restaurant">
+              <span>FSSAI Certified</span>
+            </p>
+          </div>
+          <button type="button" id = "navbarToggle" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable-nav"aria-expand = "false">
+            <span class="navbar-toggler-icon"></span>
+            <!--  <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>  -->
+          </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav ml-auto">
+            <li class=".d-block .d-sm-none">
+              <!-- <a href="index.html">
+                <span class="fa fa-fw fa-home"></span><br class=".d-block .d-sm-none">Home</a>
+              </a> -->
+            </li>
+            <li>
+              <a href="menu-category.html">
+                <span class="fa fa-fw fa-cutlery"></span><br class=".d-block .d-sm-none"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fa fa-fw fa-info"></span><br class=".d-block .d-sm-none"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fa fa-fw fa-certificate"></span><br class=".d-block .d-sm-none"> Awards</a>
+            </li>
+            <li id="phone" class=".d-block .d-sm-none">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>*We Deliver</div>
+            </li>
+          </ul><!--#nav-list-->
+        </div><!--.collapse .navbar-collapse -->
+      </div> <!--.container --> 
+      </nav>
+    
+  </header>
+  <div class="container" id="main-content">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="pic" class="img-fluid d-md-none d-lg-none d-xl-none">
+    </div>
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-category.html">
+          <div id="menu-tile"><span>Menu</span></div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html">
+          <div id="specials-tile"><span>Specials</span></div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+       <a href="https://goo.gl/maps/fTXAL6HPf5jSLbaf9" target="_blank">
+         <div id="map-tile">
+           <span>Map</span>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740.0349183331875!2d78.8234066515126!3d29.280278313264933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a486351fd873d%3A0xe9ae717f3d2833a3!2sJaspur%2C%20Uttarakhand%20244712!5e0!3m2!1sen!2sin!4v1600112812110!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+       </a>
+      </div> 
+      
+    </div>
+  </div>
+    <div id= "footer" class="card-footer" style="background-color: #333">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span><b>Hours:</b></span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="d-sm-none" style="background-color: white">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span><b>Address:</b></span><br>
+          7105 Main Road<br>
+          JASPUR, UK 244712<br>Contact us: <a href="tel:410-602-5008">410-602-5008</a>
+          <p style="color: green">* Delivery area within 3-4 miles, with minimum order of $200 plus $30 charge for all deliveries.</p>
+          <hr class="d-sm-none" style="background-color: white">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p style="font-style: italic;">"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p style="font-style: italic;">"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright The Restaurant 2020</div>
+    </div>
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+ <!--  <script type="text/javascript" src="jq umcompressed.js"></script>
+  <script type="text/javascript" src="bootstrap.bundle.min.js"></script> -->
+  <script type="text/javascript" src="jq umcompressed.js"></script>
+  <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
